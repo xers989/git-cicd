@@ -31,7 +31,7 @@ jobs:
         # Server address of Docker registry. If not set then will default to Docker Hub
         registry: "icn.ocir.io"
         # Username used to log against the Docker registry
-        username: ${{ secrets.DOCKER_USER }}
+        username: ${{ secrets.DOCKER_REGISTRY }}/${{ secrets.DOCKER_USER }}
         # Password or personal access token used to log against the Docker registry
         password: ${{ secrets.DOCKER_PASS }}
         # Log out from the Docker registry at the end of a job
