@@ -39,7 +39,7 @@ jobs:
         logout: true # optional, default is true
 
     - name: Build and tag image
-      run: docker build -t "gitaction-python:latest" .
+      run: docker build -t "icn.ocir.io/${{ env.DOCKER_REGISTRY }}/gitaction-python:latest" .
 
     - name: Push to OCIR image registry
       run: docker push icn.ocir.io/${{ env.DOCKER_REGISTRY }}/gitaction-python:latest
