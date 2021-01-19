@@ -42,4 +42,4 @@ jobs:
       run: docker build -t "gitaction-python:latest" .
 
     - name: Push to OCIR image registry
-      run: docker push gcr.io/${{ secrets.DOCKER_REGISTRY }}/gitaction-python:latest
+      run: docker push icn.ocir.io/${{ secrets.DOCKER_REGISTRY }}/gitaction-python:latest
